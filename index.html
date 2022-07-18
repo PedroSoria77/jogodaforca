@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Jogo da Forca</title>
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  </head>
+
+  
+
+   
+
+  <body>  
+    <div class="modal">
+      <div id="box"> 
+        <input id="palavra-digitada">
+        <div class="box-button">
+        <button class="button blue">Começar a jogar</button>
+        <button class="button white">Adcionar nova Palavra</button>
+        </div> 
+      </div>              
+    </div> 
+    
+      <div id="over">
+        <div class="box-button">
+        <button class="button blue restart" id="start">Novo Jogo</button>      
+        </div> 
+      </div>
+  
+      <div id="win">
+        <div class="box-button">
+        <button class="button blue win" id="winB">Novo Jogo</button>      
+        </div> 
+      </div>
+
+  <header> 
+    <img src="./image/logo_alura.svg" alt="logo alura">       
+      <h1>JOGO DA FORCA</h1>      
+  </header>  
+    <div id="container-jogo">    
+      <div class="container">
+        <canvas id="forca" width="220" height="380"></canvas>
+      <div id="butons-letras">
+        <button class="button-letra" id="button-letra0">A</button>
+        <button class="button-letra" id="button-letra1">B</button>
+        <button class="button-letra" id="button-letra2">C</button>
+        <button class="button-letra" id="button-letra3">D</button>
+        <button class="button-letra" id="button-letra4">E</button>
+        <button class="button-letra" id="button-letra5">F</button>
+        <button class="button-letra" id="button-letra6">G</button>
+        <button class="button-letra" id="button-letra7">H</button>
+        <button class="button-letra" id="button-letra8">I</button>
+        <button class="button-letra" id="button-letra9">J</button>
+        <button class="button-letra" id="button-letra10">K</button>
+        <button class="button-letra" id="button-letra11">L</button>
+        <button class="button-letra" id="button-letra12">M</button>
+        <button class="button-letra" id="button-letra13">N</button>
+        <button class="button-letra" id="button-letra14">O</button>
+        <button class="button-letra" id="button-letra15">P</button>
+        <button class="button-letra" id="button-letra16">Q</button>
+        <button class="button-letra" id="button-letra17">R</button>
+        <button class="button-letra" id="button-letra18">S</button>
+        <button class="button-letra" id="button-letra19">T</button>
+        <button class="button-letra" id="button-letra20">U</button>
+        <button class="button-letra" id="button-letra21">V</button>
+        <button class="button-letra" id="button-letra22">W</button>
+        <button class="button-letra" id="button-letra23">X</button>
+        <button class="button-letra" id="button-letra24">Y</button>
+        <button class="button-letra" id="button-letra25">Z</button>
+      </div>
+      </div class="input-letras">
+      <div id='msg'></div>
+      </div> 
+  </div>
+  <footer class="rodape-prin">
+    <section id='botao-cont'>
+      <h4 id="desenvonvedor">&copy; Pedro Soria</h4> 
+        <a href="https://github.com/PedroSoria77" target="_blank"><img src="    https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>  
+    </section>
+  </footer>
+    <script type="text/javascript" src="./js/canvas.js"></script>
+    <script type="text/javascript" src="./js/forca.js"></script>
+  </body>
+</html>
